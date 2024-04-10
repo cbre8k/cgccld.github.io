@@ -1,10 +1,12 @@
 pdfjsLib.GlobalWorkerOptions.workerSrc =
     "https://cdn.jsdelivr.net/npm/pdfjs-dist@2.7.570/build/pdf.worker.min.js";
 
+let pageNum = 1;
+
 const loadingTask = pdfjsLib.getDocument("resume.pdf");
 loadingTask.promise
     .then((pdf) => {
-        pdf.getPage(1).then((page) => {
+        pdf.getPage(pageNum).then((page) => {
             const scale = 1;
             const resolution = 2;
             const viewport = page.getViewport({ scale: scale });
