@@ -3,10 +3,10 @@ const createWinBox = (title, content, width, height) => {
         title: title,
         width: width,
         height: height,
-        top: 50,
-        right: 50,
+        top: window.innerWidth > 768 ? 50 : 0,
+        right: window.innerWidth > 768 ? 50 : 0,
         bottom: 0,
-        left: 50,
+        left: window.innerWidth > 768 ? 50 : 0,
         border: 4,
         mount: content,
         background: "#800020",
@@ -15,7 +15,7 @@ const createWinBox = (title, content, width, height) => {
             this.setBackground("#800020");
         },
         onblur: function () {
-            this.setBackground("#5a0017");
+            this.setBackground("#400010");
         },
     });
 };
@@ -40,7 +40,7 @@ const resume = document.querySelector("#resume");
 
 about.addEventListener("click", () => {
     width = window.innerWidth > 768 ? "400px" : "90%";
-    const height = window.innerWidth > 768 ? "230px" : "90%";
+    const height = window.innerWidth > 768 ? "230px" : "30%";
     createWinBox(
         "About",
         document.getElementById("about-content").cloneNode(true),
@@ -51,7 +51,7 @@ about.addEventListener("click", () => {
 
 contact.addEventListener("click", () => {
     const width = window.innerWidth > 768 ? "400px" : "90%";
-    const height = window.innerWidth > 768 ? "200px" : "90%";
+    const height = window.innerWidth > 768 ? "200px" : "25%";
     createWinBox(
         "Contact",
         document.getElementById("contact-content").cloneNode(true),
