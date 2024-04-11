@@ -40,7 +40,7 @@ const resume = document.querySelector("#resume");
 
 about.addEventListener("click", () => {
     width = window.innerWidth > 768 ? "400px" : "90%";
-    const height = window.innerWidth > 768 ? "230px" : "30%";
+    const height = window.innerWidth > 768 ? "230px" : "35%";
     createWinBox(
         "About",
         document.getElementById("about-content").cloneNode(true),
@@ -51,7 +51,7 @@ about.addEventListener("click", () => {
 
 contact.addEventListener("click", () => {
     const width = window.innerWidth > 768 ? "400px" : "90%";
-    const height = window.innerWidth > 768 ? "200px" : "25%";
+    const height = window.innerWidth > 768 ? "200px" : "30%";
     createWinBox(
         "Contact",
         document.getElementById("contact-content").cloneNode(true),
