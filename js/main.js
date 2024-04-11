@@ -1,67 +1,75 @@
+const createWinBox = (title, content, width, height) => {
+    return new WinBox({
+        title: title,
+        width: width,
+        height: height,
+        top: 50,
+        right: 50,
+        bottom: 0,
+        left: 50,
+        border: 4,
+        mount: content,
+        background: "#800020",
+        class: ["no-max", "no-full", "no-resize"],
+        onfocus: function () {
+            this.setBackground("#800020");
+        },
+        onblur: function () {
+            this.setBackground("#5a0017");
+        },
+    });
+};
+
+const loadTextFile = (filePath) => {
+    var xhr = new XMLHttpRequest();
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            document.getElementById("txt-content").textContent =
+                xhr.responseText;
+        } else {
+            console.error("Failed to load the text file. Status:", xhr.status);
+        }
+    };
+    xhr.open("GET", filePath, true);
+    xhr.send();
+};
+
 const about = document.querySelector("#about");
 const contact = document.querySelector("#contact");
 const resume = document.querySelector("#resume");
-const aboutContent = document.querySelector("#about-content");
-const contactContent = document.querySelector("#contact-content");
-const resumeContent = document.querySelector("#resume-content");
 
 about.addEventListener("click", () => {
-    const aboutBox = new WinBox({
-        title: "About",
-        width: "400px",
-        height: "320px",
-        top: (window.innerHeight - 400) / 2,
-        right: window.innerWidth - 550,
-        bottom: (window.innerHeight - 400) / 2,
-        left: 150,
-        mount: aboutContent,
-        onfocus: function () {
-            this.setBackground("#00aa00");
-        },
-        onblur: function () {
-            this.setBackground("#777");
-        },
-    });
+    width = window.innerWidth > 768 ? "400px" : "90%";
+    const height = window.innerWidth > 768 ? "230px" : "90%";
+    createWinBox(
+        "About",
+        document.getElementById("about-content").cloneNode(true),
+        width,
+        height,
+    );
 });
 
 contact.addEventListener("click", () => {
-    const contactBox = new WinBox({
-        title: "Contact",
-        background: "#00aa00",
-        width: "400px",
-        height: "220px",
-        top: 50,
-        right: window.innerWidth - (window.innerWidth - 550),
-        bottom: window.innerHeight - 50,
-        left: window.innerWidth - 550,
-        mount: contactContent,
-        onfocus: function () {
-            this.setBackground("#00aa00");
-        },
-        onblur: function () {
-            this.setBackground("#777");
-        },
-    });
+    const width = window.innerWidth > 768 ? "400px" : "90%";
+    const height = window.innerWidth > 768 ? "200px" : "90%";
+    createWinBox(
+        "Contact",
+        document.getElementById("contact-content").cloneNode(true),
+        width,
+        height,
+    );
 });
 
 resume.addEventListener("click", () => {
-    const resumeBox = new WinBox({
-        title: "Resume",
-        background: "#00aa00",
-        width: window.innerWidth / 3 + 60,
-        height: window.innerHeight - 100,
-        top: 50,
-        right: (window.innerWidth - (window.innerWidth / 3 + 60)) / 2,
-        bottom: 50,
-        left: (window.innerWidth - (window.innerWidth / 3 + 60)) / 2,
-        mount: resumeContent,
-        onfocus: function () {
-            this.setBackground("#00aa00");
-        },
-        onblur: function () {
-            this.setBackground("#777");
-        },
-    });
+    loadTextFile("../resume.txt");
+    const width = window.innerWidth > 768 ? window.innerWidth / 3 + 60 : "90%";
+    const height = window.innerWidth > 768 ? window.innerHeight - 100 : "90%";
+    createWinBox(
+        "Resume",
+        document.querySelector("#resume-content"),
+        width,
+        height,
+    );
 });
 
 $.fn.typewriter = function () {

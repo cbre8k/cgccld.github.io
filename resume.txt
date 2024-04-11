@@ -1,0 +1,40 @@
+   ________  _______  ______ ___  ___ 
+  / ___/ _ \/ ___/ / / / __ `__ \/ _ \
+ / /  /  __(__  ) /_/ / / / / / /  __/
+/_/   \___/____/\__,_/_/ /_/ /_/\___/ 
+
+C̶G̶C̶C̶L̶D̶CG [cgccld11@gmail.com]
+
+OBJECTIVE
+
+- A dedicated Blockchain Developer with a focus on NFT and DeFi sectors, aiming to leverage my expertise in smart contract development and blockchain technologies to create innovative products that drive blockchain adoption and usage.
+- Proficiency in Solidity, JavaScript, Rust and Go or Ether.js, Viem, Foundry.rs.
+
+PROFESSIONAL EXPERIENCE
+
++ Blockchain Developer [Bacoor Vietnam | Mar 2023 - Present]
+
+  - Developed and maintained smart contracts and new blockchain features, enhancing contract functionality and user experience.
+  - Collaborated closely with the API team, providing critical support for debugging, thereby improving system reliability and performance.
+  - Led initiatives to optimize gas efficiency, contributing to cost reductions and enhanced contract performance.
+  - Conducted thorough research on new Ethereum Improvement Proposals (EIPs) and advancements in blockchain tools such as OpenZeppelin, Uniswap, Chainlink, Solmate, and Solady, ensuring cutting-edge development practices.
+
++ Blockchain Developer [Metapolis | Jun 2022 - Mar 2023]
+
+  - Actively participated in code review processes, ensuring high-quality code and fostering team knowledge sharing.
+  - Played a key role in the development of secure blockchain solutions, including safe on-chain randomness, contributing to the robustness of applications.
+  - Developed, implemented, and managed smart contracts (Token, NFT, Marketplace, Staking), driving the expansion of blockchain functionalities.
+  - Utilized Hardhat for the deployment and upgrading of contracts, streamlining development workflows.
+  - Developed an API using Ether.js for seamless contract interaction, enhancing application interoperability.
+
++ Blockchain Researcher [Rakumo Co., Ltd. | Mar 2022 - Jun 2022]
+
+  - Conducted in-depth research on blockchain security threats, contributing to the development of safer blockchain applications.
+  - Explored a wide range of blockchain projects, gaining insights into innovative blockchain applications and trends.
+  - Developed expertise in the creation, trade, and management of NFTs, enriching the team's knowledge and capabilities.
+  - Acquired hands-on experience in smart contract and DApp development, focusing on practical application and learning.
+
++ Intern [Rakumo Co., Ltd. | Jan 2022 - Mar 2022]
+
+  - Undertook comprehensive research on blockchain technologies and concepts, laying a solid foundation for a career in blockchain development.
+  - Gained knowledge on various blockchain networks and Solidity, broadening my technical skills and understanding of blockchain ecosystems.
