@@ -143,6 +143,15 @@ footer {
   word-wrap: break-word;
 }
 
+.wb-min {
+    background-image: url(..//assets/min.svg);
+    background-size: 15px center;
+}
+
+.wb-close {
+    background-image: url(..//assets/close.svg);
+}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   #txt-content {
